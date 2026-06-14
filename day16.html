@@ -1,27 +1,53 @@
 <!DOCTYPE html>
 <html>
-<head>
-  <title>Class vs ID</title>
-  <style>
-    .red {  /* class = . se shuru, ye group ke liye */
-      background-color: red;
-      width: 100px;
-      height: 100px;
-      margin: 10px;
-    }
-    
-    #bigbox {  /* id = # se shuru, ye akela special ke liye */
-      background-color: blue;
-      width: 200px;
-      height: 200px;
-    }
-  </style>
-</head>
-<body>
-  <div class="red"></div>
-  <div class="red"></div>
-  <div class="red"></div>
-  
-  <div id="bigbox"></div>
-</body>
+  <head>
+   <title>Admission Form using css properties</title>
+   <style>
+     h1 {
+       color:green; text-align: center;
+     }
+     h3 {
+    color:green; text-align:center;
+     }
+     body {
+       background-color:yellow;
+     }
+   </style>
+  </head>
+  <body>
+    <form name=f1>
+      
+    <h1>Admission Form</h1>
+    <hr width=90% color=black>
+    <br>
+Students Name:<input type="text";name="s1"   placeholder=""><br><br>
+father's name:<input type="text" name="f1"><br><br>
+Mother's name:<input type="text" name="m1"><br><br>
+E-mail :<input type="email" name="email"><br><br>
+Admission in :
+<select size="1">
+<option value="1">1st std</option>
+<option value="2nd">2nd std</option>
+<option value="3">3rd std</option>
+<option value="4">4th std</option>
+<option value="5">5th std</option>
+<option value="6">6th std</option>
+<option value="7">7th std</option>
+<option value="8">8th std</option>
+<option value="9">9th std</option>
+<option value="10">10th std</option>
+</select><br><br>
+
+<hr width=90% color=black>
+<h3>Students details</h3>
+DOB:<input type="date" name="dt"><br><br>
+Place of birth:<input type="text" name="p1"><br><br>
+Address:<input type="text" name="t1"><br><br>
+Medical Histoty:<input type="text" name="m1"><br><br>
+<input type="submit" name="s1"
+  value="submit">
+<input type="reset" name="c1"
+value="cancel">
+  </form
+  </body>
 </html>

@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="hi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Rehan Khan - Portfolio</title>
+    <style>
+        /* Ustad ka Universal Code - Body */
+        body {
+            margin: 0;
+            background: #0a192f;
+            color: #ccd6f6;
+            font-family: Arial, sans-serif;
+        }
+
+        /* Day 18: Hero Section */
+        #hero-section {
+            padding: 80px 20px;
+            border: 2px solid #64ffda;
+            border-radius: 20px;
+            box-shadow: 0px 0px 30px #64ffda;
+            max-width: 700px;
+            margin: 50px auto;
+            text-align: center;
+        }
+
+        .gol-photo {
+            width: 150px;
+            height: 150px;
+            border-radius: 50%;
+            border: 4px solid #64ffda;
+            display: block;
+            margin: 0 auto 20px;
+        }
+
+        #hero-section h1 {
+            color: #64ffda;
+            font-size: 40px;
+            margin: 10px 0;
+        }
+
+        /* Day 20: Button ka asli code */
+        .hire-btn {
+            background: transparent;
+            color: #64ffda;
+            border: 2px solid #64ffda;
+            padding: 12px 25px;
+            font-size: 18px;
+            border-radius: 8px;
+            cursor: pointer;
+            margin-top: 20px;
+        }
+
+        /* Day 20 ka 1 Shastra: HOVER ka jadoo */
+        .hire-btn:hover {
+            background: #64ffda; /* Background bhar de */
+            color: #0a192f;      /* Text ulta kar de */
+            box-shadow: 0px 0px 25px #64ffda; /* Glow double */
+            transform: scale(1.05); /* 5% bada kar de */
+        }
+
+        /* Day 19: About Me Section */
+        #about-section {
+            padding: 60px 20px;
+            background: #112240;
+        }
+
+        #about-section h2 {
+            text-align: center;
+            color: #64ffda;
+            font-size: 32px;
+            margin-bottom: 40px;
+        }
+
+        .about-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 40px;
+            max-width: 900px;
+            margin: 0 auto;
+        }
+
+        .about-photo {
+            width: 250px;
+            height: 250px;
+            border-radius: 50%;
+            border: 4px solid #64ffda;
+            flex-shrink: 0;
+        }
+
+        .about-text {
+            line-height: 1.8;
+            font-size: 18px;
+            color: #ccd6f6;
+            text-align: left;
+        }
+
+        /* Mobile ka jugaad - Day 19 Fix */
+        @media (max-width: 768px) {
+            .about-container {
+                flex-direction: column;
+                text-align: center;
+            }
+            
+            .about-container img {
+                width: 150px;
+                height: 150px;
+            }
+            
+            .about-text {
+                text-align: center;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <!-- Day 18: Hero Section -->
+    <section id="hero-section">
+        <img src="rehab.jpg" alt="Rehan ki photo" class="gol-photo">
+        
+        <h1>Rehan Khan</h1>
+        <p>17 saal ka Frontend Developer banne wala hoon</p>
+        
+        <button class="hire-btn">Hire Me</button>
+    </section>
+
+    <!-- Day 19: About Me Section -->
+    <section id="about-section">
+        <h2>About Me</h2>
+        
+        <div class="about-container">
+            <img src="rehab.jpg" alt="Rehan ki photo" class="about-photo">
+            
+            <div class="about-text">
+                <p>Main Rehan Khan. 17 saal ka hu.</p>
+                <p>Mera sapna Frontend Developer banne ka hai.</p>
+                <p>Isliye main roz 1 naya CSS seekh raha hu. 
+                Day 18 complete kar liya, Day 19 kar raha hu. 
+                Border, Border-radius, Box-shadow, Flex sab seekh liya
+                

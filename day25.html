@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Day 25 - Flex Wrap</title>
+  <style>
+    /* Dono box ka same parent design */
+    .parent {
+      display: flex;
+      width: 320px; /* Choti bench = kam jagah */
+      border:8px solid red;
+      margin: 20px;
+      padding: 10px;
+      background: #fccde4;
+    }
+
+    /* Bacche = har box */
+    .box {
+      width: 100px; 
+      height: 80px;
+      background: #5f00ab;
+      color: white;
+      font-size: 24px;
+      font-weight: bold;
+      margin: 5px;
+    
+      display: flex;
+      justify-content: center;
+      align-items: center;
+    }
+    .wrap-on {
+      flex-wrap: wrap;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>1. Bina flex-wrap: nowrap - Default wala zidhi bench</h2>
+  <div class="parent">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+  <h2>2. flex-wrap: wrap laga diya - Samajhdar bench</h2>
+  <div class="parent wrap-on">
+    <div class="box">1</div>
+    <div class="box">2</div>
+    <div class="box">3</div>
+    <div class="box">4</div>
+  </div>
+
+</body>
+</html>

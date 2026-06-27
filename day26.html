@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  body { margin: 0; font-family: Arial; }
+
+  /* Hero Section - Jo tune abhi banaya */
+  .hero {
+    height: 100vh;
+    background: linear-gradient(135deg, red 0%, #76f 100%);
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+  }
+  .hero h1 { font-size: 50px; margin: 10px; }
+  .hero button { padding: 15px 30px; font-size: 18px; border: none; background: orange; color: white; border-radius: 10px; margin-top: 20px; }
+
+  /* Naya Section - Cards wali line */
+  .services {
+    padding: 50px;
+    background: cyan;
+    
+    display: flex;          /* Flex on */
+    flex-wrap: wrap;        /* Screen choti ho to neeche aa jao */
+    gap: 20px;              /* 🔥 Bas ye line - sab box ke beech 20px space */
+    justify-content: center;
+  }
+
+  .card {
+    width: 250px;
+    height: 200px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 24px;
+    font-weight: bold;
+  }
+</style>
+</head>
+<body>
+
+  <!-- Day 26 Part 1: Hero Section -->
+  <div class="hero">
+    <h1>Meri  Website</h1>
+    <p>Main 26 din me CSS seekh raha hoon</p>
+    <button>Mere Kaam Dekho</button>
+  </div>
+
+  <!-- Day 26 Part 2: flex-wrap + gap -->
+  <div class="services">
+    <div class="card">Design</div>
+    <div class="card">Coding</div>
+    <div class="card">SEO</div>
+    <div class="card">Marketing</div>
+  </div>
+
+</body>
+</html>
